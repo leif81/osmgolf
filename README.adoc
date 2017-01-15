@@ -1,1 +1,9 @@
-osmgolf
+= osmgolf
+
+A simple golf GPS application example which leverages freely available data from Open Street Map.
+
+== Open Street Map golf courses
+
+To learn more about how golf courses are modelled in Open Street Map see the following:
+
+http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dgolf_course
