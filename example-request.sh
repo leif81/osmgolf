@@ -1,7 +1,10 @@
 #!/bin/bash
 #
 # Example demonstrating the use of OSM Overpass API to request data for a golf GPS.
-
+#
+# See http://wiki.openstreetmap.org/wiki/Overpass_API
+# See http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
+# See online demo for creating and testing Overpass QL http://overpass-turbo.eu/
 
 overpassApiUrl="http://overpass-api.de"
 
