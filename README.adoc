@@ -1,6 +1,6 @@
 = OSM Golf
 
-A simple "distance-to-the-hole" golf GPS demo application example which leverages freely available data from Open Street Map.
+A simple "distance-to-the-hole" golf GPS web application which leverages freely available data from Open Street Map.
 
 == Open Street Map golf courses
 
