@@ -1,4 +1,4 @@
-= osmgolf
+= OSM Golf
 
 A simple golf GPS application example which leverages freely available data from Open Street Map.
 
@@ -7,3 +7,11 @@ A simple golf GPS application example which leverages freely available data from
 To learn more about how golf courses are modelled in Open Street Map see the following:
 
 http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dgolf_course
+
+=== Overpass API
+
+This project demonstrates the use of OSM Overpass API to request data for a golf GPS.
+
+* See http://wiki.openstreetmap.org/wiki/Overpass_API
+* See http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
+* See online demo for creating and testing Overpass QL http://overpass-turbo.eu/
