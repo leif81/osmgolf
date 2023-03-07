@@ -2,15 +2,11 @@
 
 A simple "distance-to-the-hole" golf GPS web application which leverages freely available data from Open Street Map.
 
-== Open Street Map golf courses
-
-To learn more about how golf courses are modelled in Open Street Map see the following:
+To learn how golf courses are modelled in Open Street Map see the following:
 
 http://wiki.openstreetmap.org/wiki/Tag:leisure%3Dgolf_course
 
-=== Overpass API
-
-This project demonstrates the use of OSM Overpass API to request data for a golf GPS.
+This project uses the Overpass API to request golf course data from Open Street Map. For more info see the following:
 
 * See http://wiki.openstreetmap.org/wiki/Overpass_API
 * See http://wiki.openstreetmap.org/wiki/Overpass_API/Overpass_QL
