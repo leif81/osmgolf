@@ -2,7 +2,7 @@
 
 A simple "distance-to-the-hole" golf GPS web application which leverages freely available data from Open Street Map.
 
-NOTE: This is not a working app yet. Some basic pieces are in place, but don't expect it to be your caddy yet.
+NOTE: This is not a working app yet. Some basic pieces are in place, but don't expect it to be your caddie yet.
 
 To learn how golf courses are modelled in Open Street Map see the following:
 
