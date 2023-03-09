@@ -2,8 +2,7 @@
 /* global async, Map, Set */
 'use strict';
 
-// Override these by passing in an object with any of these key/value pairs into the initGitLabPb function (e.g. from gitlabpb.html page).
-// The privateToken requires read_api scope.
+// Override these by passing in an object with any of these key/value pairs into the initOsmGolf function (e.g. from osmgolf.html page).
 var osmGolfOptions = {
     domElement: "#osmgolf",
     service: "https://overpass-api.de/api/interpreter?data=\[out:json\];",
