@@ -6,7 +6,7 @@
 // The privateToken requires read_api scope.
 var osmGolfOptions = {
     domElement: "#osmgolf",
-    service: "http://overpass-api.de/api/interpreter?data=\[out:json\];",
+    service: "https://overpass-api.de/api/interpreter?data=\[out:json\];",
     checkForUpdates: false
 };
 
