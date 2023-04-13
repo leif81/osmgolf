@@ -24,7 +24,7 @@ function createOsmGolf() {
 }
 
 function getCurrentLocation() {
-    // TODO - in future request location from browser API.
+    // TODO - in future request users current location from web browser Geolocation API. https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API 
     return {lat: 44.2450803, lon: -76.4488947 }; // This position is at Garrison Golf Course south of the pro shop.
 }
 
