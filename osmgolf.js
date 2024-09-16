@@ -23,21 +23,23 @@ function createOsmGolf() {
     return osmgolf;
 }
 
-function getCurrentLocation() {
-    // TODO - in future request users current location from web browser Geolocation API. https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API 
-    return {lat: 44.2450803, lon: -76.4488947 }; // This position is at Garrison Golf Course south of the pro shop.
-}
-
 function getNearestGolfCourse() {
-    var myLocation = getCurrentLocation();
-    var request = osmGolfOptions.service + "way(around:100.0," + myLocation.lat + "," + myLocation.lon + ")\[leisure=golf_course\];out%20tags;";
-    
-    httpGet(request, function(response) {
-        response.elements.forEach(element => {
-            var courseName = document.createTextNode("The nearest golf course is " + element.tags.name + ".");
-            document.querySelector(osmGolfOptions.domElement).appendChild(courseName);
+
+    // Use devices current location from web browser Geolocation API. 
+    // https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API 
+    if ("geolocation" in navigator) {
+        navigator.geolocation.getCurrentPosition((position) => {
+            var request = osmGolfOptions.service + "way(around:10000.0," + position.coords.latitude + "," + position.coords.longitude + ")\[leisure=golf_course\];out%20tags;";
+
+            console.log(request);
+            
+            httpGet(request, function(response) {
+                var element = response.elements[0];
+                var courseName = document.createTextNode("The nearest golf course is " + element.tags.name + ".");
+                document.querySelector(osmGolfOptions.domElement).appendChild(courseName);
+            });
         });
-    });
+    }
 }
 
 function getNearestHole() {
